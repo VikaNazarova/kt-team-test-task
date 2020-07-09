@@ -10,6 +10,7 @@
 body {
     font-family: 'Gilroy Regular';
     color: #333333;
+    overflow-x: hidden;
 }
 img {
     max-width: 100%;
@@ -352,6 +353,9 @@ footer.bg-color::before {
 }
 /* mobile */
 @media screen and (max-width: 1190px) { 
+    .mb-mob {
+        margin-bottom: 3rem;
+    }
     header {
         display: block;
         text-align: center;
@@ -371,5 +375,8 @@ footer.bg-color::before {
     }
     #problems-main-img {
         position: initial;
+    }
+    .cost div {
+        display: block;
     }
 }
