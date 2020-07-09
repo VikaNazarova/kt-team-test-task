@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    font-size: 16px;
+}
+body {
+    font-family: 'Gilroy Regular';
+    color: #333333;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+a:hover {
+    text-decoration: none;
+    filter: invert(100%);
+    transition: 0.3s;
+}
+button, input {
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 24px;
+    font-weight: bold;
+}
+input {
+    background: #FFFFFF;
+    border: none;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+}
+::placeholder {
+    color: #999999;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.btn-white {
+    background: #fff;
+    border: 2px solid #333333;
+    padding: 12px 40px;
+}
+.btn-blue {
+    background: #3454F5;
+    color: #fff;
+    border: none;
+    padding: 24px 80px;
+}
+.btn-yellow {
+    background: #FFE818;
+}
+.badge {
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #333333;
+    background: #fff;
+    padding: 4px 8px;
+    margin: 0 .5rem .5rem 0;
+}
+.blue-arrow {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #3454F5;
+    padding: 1.5rem 1.9rem;
+}
+.blue-arrow:hover {
+    filter: saturate(0);
+    transition: 0.3s;
+}
+.bg-color {
+    position: relative;
+}
+.bg-color::before {
+    content: ''; 
+    position: absolute; 
+    z-index: -20; 
+    top: 0; 
+    bottom: 0; 
+    left: 50%; 
+    margin-left: -50vw; 
+    width: 100vw;
+    background: #EFF7FF;
+}
+
+/* modules */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 7rem;
+
+}
+header nav, header div {
+    display: flex;
+    align-items: center;
+}
+header a {
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.100962px;
+    margin: 0 3rem;
+}
+.hero {
+    padding: 10rem 0;
+}
+.hero::before {
+    background: url('./img/bg-hero.jpg') center no-repeat;
+}
+.hero p {
+    font-size: 24px;
+}
+.problems {
+    margin: 7rem 0 10rem 0;
+    position: relative;
+}
+.problem > * {
+    margin: 1rem 0;
+}
+#problems-main-img {
+    position: absolute;
+    top: 10%;
+    left: -30%;
+}
+.moto {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.moto::before {
+    background: url('./img/bg-moto.jpg') center/cover no-repeat;
+}
+.types-of-works{
+    margin: 10rem 0;
+}
+.types-of-works .row {
+    margin-bottom: 10rem;
+}
+.types-of-works .row .offset-md-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.types-of-works .work-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 470px;
+    border: 5px solid #3A3A3A;
+    border-radius: 20px;
+    box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.15);
+}
+.types-of-works ul {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0;
+}
+.types-of-works ul li:last-of-type {
+    color: #E46868;
+}
+.types-of-works ul li::before {
+    content: '+';
+    color: #3454F5;
+    margin-right: 1rem;
+}
+.types-of-works ul li:last-of-type::before {
+    content: '-';
+    color: #E46868;
+}
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFF7FF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+}
+.order input {
+    margin: 0 1.5rem 1.5rem 0;
+}
+.order input.btn-blue {
+   padding: 24px 60px;
+}
+.order span {
+    color: #999999;
+    font-size: 0.875rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.stack {
+    padding: 5rem 0;
+    margin: 9rem 0;
+}
+.stack .bg-white {
+    border-radius: 10px;
+    padding: 1rem 0;
+}
+/* .cases .row {
+    margin-bottom: 3rem;
+} */
+.cases .cases-img {
+    position: relative;
+    margin-right: 3rem;
+}
+.cases .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+    background-color: rgba(52, 84, 245, 0.7);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cases .cases-img:hover .overlay {
+    display: flex;
+}
+.cases .overlay a {
+    color: #fff;
+    font-size: 1rem;
+}
+.cases .overlay a span {
+    font-size: 2rem;
+}
+.cases .col-md-5 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.cases .number {
+    color: #3454F5;
+    font-size: 1.125rem;
+    background: #EFF7FF;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+}
+.cases p {
+    font-size: 1rem;
+    line-height: 24px;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+.cost {
+    padding: 5rem 0;
+    margin: 10rem 0;
+}
+.cost.bg-color::before {
+    background: #3454F5;
+}
+.cost div {
+    display: flex;
+    align-items: center;
+}
+.cost div > * {
+    margin-right: 2rem;
+} 
+.cost input {
+    width: 100%;
+}
+.cost input.btn-yellow {
+    padding: 24px 60px;
+}
+.cost span {
+    display: block;
+    font-size: 0.875rem;
+}
+.workers .offset-md-1 {
+    display: flex;
+    align-items: center;
+}
+.workers img.rounded-circle {
+    border: 2px solid #333333;
+    float: left;
+}
+.workers span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+.other-works {
+    margin: 10rem 0;
+}
+.other-works .col-md-4 div {
+    background: #EFF7FF;
+    padding: 2rem;
+    position: relative;
+    height: 460px;
+}
+.other-works .blue-arrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.other-works img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+footer {
+    padding: 5rem 0;
+}
+footer.bg-color::before {
+    background: #2E3646;
+}
+.footer-text {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+/* bigger screens */
+@media screen and (min-width: 1880px) { 
+    header {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+/* mobile */
+@media screen and (max-width: 1190px) { 
+    header {
+        display: block;
+        text-align: center;
+        height: fit-content;
+        padding: 2.5rem 0;
+    }
+    header nav {
+        display: grid;
+        margin: 1rem 0;
+    }
+    header div {
+        display: flex;
+        justify-content: center;
+    }
+    header a {
+        margin: .5rem 0;
+    }
+    #problems-main-img {
+        position: initial;
+    }
+}
